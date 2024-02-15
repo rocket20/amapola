@@ -20,14 +20,13 @@
         }
 
         #logo {
-            max-width: 80%;
+            width: 80%; /* Utilizamos width en lugar de max-width para permitir el ajuste en dispositivos móviles */
             height: auto;
             margin-bottom: 20px;
-            margin: 0 auto;
         }
 
         #social {
-            max-width: 50%;
+            width: 80%; /* Ajustamos el ancho de las redes sociales para dispositivos móviles */
             height: auto;
             text-align: center;
         }
@@ -39,8 +38,8 @@
         }
 
         @media (max-width: 767px) {
-            #social {
-                max-width: 80%;
+            #logo, #social {
+                width: 100%; /* En dispositivos móviles, ajustamos el ancho al 100% para ocupar el ancho completo */
             }
         }
     </style>
