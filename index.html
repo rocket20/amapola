@@ -20,9 +20,10 @@
         }
 
         #logo {
-            max-width: 100%; /* Ajuste para asegurar que el logo se ajuste correctamente */
+            max-width: 80%; /* Reducido a 80% para asegurar que no ocupe todo el ancho en dispositivos móviles */
             height: auto;
             margin-bottom: 20px;
+            margin: 0 auto; /* Centra el logo horizontalmente */
         }
 
         #social {
@@ -38,8 +39,8 @@
         }
 
         @media (max-width: 767px) {
-            #logo, #social {
-                max-width: 80%;
+            #social {
+                max-width: 80%; /* Ajusta el ancho de las redes sociales en dispositivos móviles */
             }
         }
     </style>
