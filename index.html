@@ -35,6 +35,22 @@
             height: auto;
             margin-left: 10px;
         }
+
+        @media (max-width: 767px) {
+            body {
+                justify-content: center;
+            }
+
+            #logo, #social {
+                max-width: 80%;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            #social {
+                margin-top: 20px; /* Ajusta el espaciado superior en dispositivos móviles según sea necesario */
+            }
+        }
     </style>
 </head>
 <body>
@@ -42,9 +58,12 @@
         <img src="logo/logoamapola.png" alt="Logo">
     </div>
     <div id="social">
-        <img src="ruta/a/tu/facebook.png" alt="Facebook">
-        <img src="ruta/a/tu/twitter.png" alt="Twitter">
-        <!-- Agrega más iconos de redes sociales según sea necesario -->
+        <a href="https://www.facebook.com/raquelopezb?mibextid=kFxxJD" target="_blank">
+            <img src="iconos/Facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/amapolani/?hl=es" target="_blank">
+            <img src="iconos/Instagram.png" alt="Facebook">
+        </a>
     </div>
 </body>
 </html>
