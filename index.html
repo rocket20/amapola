@@ -12,43 +12,33 @@
             background: url('css/portada.jpeg') no-repeat center center fixed;
             background-size: cover;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             height: 100vh;
         }
 
         #logo {
             max-width: 50%;
             height: auto;
-            margin-left: 20px;
+            margin-bottom: 20px;
         }
 
         #social {
             max-width: 50%;
             height: auto;
-            margin-right: 20px;
-            text-align: right;
+            text-align: center;
         }
 
         #social img {
             max-width: 40px;
             height: auto;
-            margin-left: 10px;
+            margin: 0 10px;
         }
 
         @media (max-width: 767px) {
-            body {
-                justify-content: center;
-            }
-
             #logo, #social {
                 max-width: 80%;
-                text-align: center;
-                margin: 0 auto;
-            }
-
-            #social {
-                margin-top: 20px; /* Ajusta el espaciado superior en dispositivos móviles según sea necesario */
             }
         }
     </style>
@@ -62,8 +52,9 @@
             <img src="iconos/Facebook.png" alt="Facebook">
         </a>
         <a href="https://www.instagram.com/amapolani/?hl=es" target="_blank">
-            <img src="iconos/Instagram.png" alt="Facebook">
+            <img src="iconos/Instagram.png" alt="Instagram">
         </a>
+        <!-- Agrega más redes sociales según sea necesario -->
     </div>
 </body>
 </html>
