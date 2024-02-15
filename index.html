@@ -5,15 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amapola</title>
     <style>
-        img {
-            max-width: 100%;
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('css/portada.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+        }
+
+        #logo {
+            max-width: 50%;
             height: auto;
-            display: block; /* Elimina espacio adicional debajo de la imagen */
-            margin: auto; /* Centra la imagen */
+            margin-left: 20px;
+        }
+
+        #social {
+            max-width: 50%;
+            height: auto;
+            margin-right: 20px;
+            text-align: right;
+        }
+
+        #social img {
+            max-width: 40px;
+            height: auto;
+            margin-left: 10px;
         }
     </style>
 </head>
 <body>
-    <img src="css/portada.jpeg" alt="">
+    <div id="logo">
+        <img src="logo/logoamapola.png" alt="Logo">
+    </div>
+    <div id="social">
+        <img src="ruta/a/tu/facebook.png" alt="Facebook">
+        <img src="ruta/a/tu/twitter.png" alt="Twitter">
+        <!-- Agrega más iconos de redes sociales según sea necesario -->
+    </div>
 </body>
 </html>
