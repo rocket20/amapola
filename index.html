@@ -17,16 +17,21 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            overflow-x: hidden; /* Evita el desplazamiento horizontal en dispositivos móviles */
+        }
+
+        #container {
+            width: 80%; /* Ajusta el ancho del contenedor principal */
         }
 
         #logo {
-            width: 80%; /* Utilizamos width en lugar de max-width para permitir el ajuste en dispositivos móviles */
+            width: 100%; /* Utiliza el 100% del ancho del contenedor */
             height: auto;
             margin-bottom: 20px;
         }
 
         #social {
-            width: 80%; /* Ajustamos el ancho de las redes sociales para dispositivos móviles */
+            width: 100%; /* Utiliza el 100% del ancho del contenedor */
             height: auto;
             text-align: center;
         }
@@ -38,24 +43,26 @@
         }
 
         @media (max-width: 767px) {
-            #logo, #social {
-                width: 100%; /* En dispositivos móviles, ajustamos el ancho al 100% para ocupar el ancho completo */
+            #container {
+                width: 100%; /* Ajusta el ancho del contenedor principal en dispositivos móviles */
             }
         }
     </style>
 </head>
 <body>
-    <div id="logo">
-        <img src="logo/logoamapola.png" alt="Logo">
-    </div>
-    <div id="social">
-        <a href="https://www.facebook.com/raquelopezb?mibextid=kFxxJD" target="_blank">
-            <img src="iconos/Facebook.png" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com/amapolani/?hl=es" target="_blank">
-            <img src="iconos/Instagram.png" alt="Instagram">
-        </a>
-        <!-- Agrega más redes sociales según sea necesario -->
+    <div id="container">
+        <div id="logo">
+            <img src="logo/logoamapola.png" alt="Logo">
+        </div>
+        <div id="social">
+            <a href="https://www.facebook.com/raquelopezb?mibextid=kFxxJD" target="_blank">
+                <img src="iconos/Facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/amapolani/?hl=es" target="_blank">
+                <img src="iconos/Instagram.png" alt="Instagram">
+            </a>
+            <!-- Agrega más redes sociales según sea necesario -->
+        </div>
     </div>
 </body>
 </html>
