@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,38 +18,48 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            overflow-x: hidden; /* Evita el desplazamiento horizontal en dispositivos móviles */
+            overflow-x: hidden;
         }
 
         #container {
-            width: 80%; /* Ajusta el ancho del contenedor principal */
+            width: 80%;
+            max-width: 600px;
         }
 
         #logo {
-            width: 100%; /* Utiliza el 100% del ancho del contenedor */
+            width: 100%;
+            max-width: 400px;
             height: auto;
             margin-bottom: 20px;
         }
 
         #social {
-            width: 100%; /* Utiliza el 100% del ancho del contenedor */
+            width: 100%;
             height: auto;
             text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         #social img {
             max-width: 40px;
             height: auto;
-            margin: 0 10px;
+            margin: 0 10px 10px 10px;
         }
 
         @media (max-width: 767px) {
             #container {
-                width: 100%; /* Ajusta el ancho del contenedor principal en dispositivos móviles */
+                width: 100%;
+            }
+
+            #social img {
+                margin: 0 5px 5px 5px;
             }
         }
     </style>
 </head>
+
 <body>
     <div id="container">
         <div id="logo">
@@ -65,4 +76,5 @@
         </div>
     </div>
 </body>
+
 </html>
